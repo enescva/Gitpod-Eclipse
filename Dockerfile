@@ -6,7 +6,8 @@ USER gitpod
 RUN sudo apt-get update \
     && sudo apt-get install -y snapd default-jre
 
-ENV DISPLAY=:2
+RUN sudo snap install --classic eclipse
+
 
 # # Install Eclipse
 # RUN wget "http://eclipse.mirror.rafal.ca/oomph/epp/2019-12/R/eclipse-inst-linux64.tar.gz" \
