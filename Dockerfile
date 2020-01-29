@@ -2,14 +2,6 @@ FROM gitpod/workspace-full-vnc
 
 USER gitpod
 
-# RUN sudo add-apt-repository ppa:webupd8team/java -y \
-#     && sudo apt-get update \
-#     && sudo apt-get install -y \
-#         default-jre \
-#         oracle-java8-set-default \
-#         libxtst-dev
-
-
 # Install Eclipse deps
 RUN sudo apt-get update \
     && sudo apt-get install -y \
