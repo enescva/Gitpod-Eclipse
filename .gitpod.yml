@@ -1,4 +1,4 @@
-image:
+eimage:
   file: Dockerfile
 ports:
   - port: 6080
@@ -7,6 +7,5 @@ ports:
     onOpen: ignore
   - port: 35900
     onOpen: ignore
-workspaceLocation: "/tmp/eclipse-installer"
 tasks:
-  - command: ./eclipse-inst
+  - command: cd /tmp/eclipse-installer && ./eclipse-inst
