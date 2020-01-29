@@ -6,7 +6,8 @@ USER gitpod
 RUN sudo apt-get update \
     && sudo apt-get install -y snapd default-jre
 
-RUN systemctl start snapd.service && sudo snap install --classic eclipse
+RUN sudo systemctl start snapd.service \
+    && sudo snap install --classic eclipse
 
 
 # # Install Eclipse
