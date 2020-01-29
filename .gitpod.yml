@@ -7,7 +7,6 @@ ports:
     onOpen: ignore
   - port: 35900
     onOpen: ignore
-checkoutLocation: "/tmp/eclipse-installer"
-workspaceLocation: "."
+workspaceLocation: "/tmp/eclipse-installer"
 tasks:
   - command: ./eclipse-inst
