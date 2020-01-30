@@ -1,4 +1,4 @@
-eimage:
+image:
   file: Dockerfile
 ports:
   - port: 6080
