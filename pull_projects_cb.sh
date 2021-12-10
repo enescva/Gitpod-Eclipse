@@ -1,3 +1,4 @@
+cd eclipse-workspace
 REM 
 git clone --branch master https://github.com/openefsa/catalogue-browser.git
 REM 
