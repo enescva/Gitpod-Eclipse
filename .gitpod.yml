@@ -8,4 +8,8 @@ ports:
   - port: 35900
     onOpen: ignore
 tasks:
-  - command: cd /tmp/eclipse-installer && ./eclipse-inst
+  - command: |
+    wget "http://eclipse.mirror.rafal.ca/oomph/epp/2019-12/R/eclipse-inst-linux64.tar.gz" 
+    tar -xf *.tar.gz 
+    mv eclipse-installer /tmp
+    cd /tmp/eclipse-installer && ./eclipse-inst
